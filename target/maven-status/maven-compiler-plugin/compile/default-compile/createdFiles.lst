@@ -1,6 +1,6 @@
-unsl/services/UserService.class
 unsl/Application.class
 unsl/controllers/UserController.class
+unsl/services/UserService.class
 unsl/repository/UserRepository.class
 unsl/entities/User.class
-unsl/utils/Responses.class
+unsl/entities/ResponseError.class
