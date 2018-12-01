@@ -22,7 +22,12 @@ public class UserController {
     @ResponseBody
     public Object searchUser(@RequestParam("dni") Long dni) {
         User user = userService.findByDni(dni);
-        return buildResponse(user);
+
+        if ( user == null) {
+            return new ResponseEntity(new ResponseError(404, String.format("User with dni %d not found", dni)), HttpStatus.NOT_FOUND);
+        }
+
+        return user;
     }
 
     /**
@@ -33,7 +38,12 @@ public class UserController {
     @ResponseBody
     public Object getUser(@PathVariable("userId") Long userId) {
         User user = userService.getUser(userId);
-        return buildResponse(user);
+
+        if ( user == null) {
+            return new ResponseEntity(new ResponseError(404, String.format("User %d not found", userId)), HttpStatus.NOT_FOUND);
+        }
+
+        return user;
     }
 
     /**
@@ -45,17 +55,6 @@ public class UserController {
     @ResponseBody
     public Object createUser(@RequestBody User User) {
         return userService.saveUser(User);
-    }
-
-    /**
-     * @param user
-     * @return
-     */
-    private Object buildResponse(User user) {
-        if ( user == null) {
-            return new ResponseEntity(new ResponseError(404, "User not found"), HttpStatus.NOT_FOUND);
-        }
-        return user;
     }
 
 }
