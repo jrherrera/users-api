@@ -1,6 +1,6 @@
-/Users/jherrera/Dev/Projects/Java/CharlaUNSL/users-api/src/main/java/unsl/repository/UserRepository.java
-/Users/jherrera/Dev/Projects/Java/CharlaUNSL/users-api/src/main/java/unsl/entities/ResponseError.java
-/Users/jherrera/Dev/Projects/Java/CharlaUNSL/users-api/src/main/java/unsl/services/UserService.java
-/Users/jherrera/Dev/Projects/Java/CharlaUNSL/users-api/src/main/java/unsl/Application.java
-/Users/jherrera/Dev/Projects/Java/CharlaUNSL/users-api/src/main/java/unsl/entities/User.java
-/Users/jherrera/Dev/Projects/Java/CharlaUNSL/users-api/src/main/java/unsl/controllers/UserController.java
+/Users/jcrodriguez/Workspace/curso-unsl/users-api/src/main/java/unsl/entities/User.java
+/Users/jcrodriguez/Workspace/curso-unsl/users-api/src/main/java/unsl/services/UserService.java
+/Users/jcrodriguez/Workspace/curso-unsl/users-api/src/main/java/unsl/entities/ResponseError.java
+/Users/jcrodriguez/Workspace/curso-unsl/users-api/src/main/java/unsl/Application.java
+/Users/jcrodriguez/Workspace/curso-unsl/users-api/src/main/java/unsl/controllers/UserController.java
+/Users/jcrodriguez/Workspace/curso-unsl/users-api/src/main/java/unsl/repository/UserRepository.java
